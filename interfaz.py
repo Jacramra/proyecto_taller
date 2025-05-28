@@ -38,6 +38,12 @@ def registrar():
     entry_clases.delete(0, tk.END)
     combo_taller.set("")
 
+# Función para generar reporte
+def generar_reporte():
+    if not os.path.exists(ruta_csv):
+        messagebox.showerror("No hay datos aún.")
+        return
+
 
 #---------------------Interfaz---------------------
 
