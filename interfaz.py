@@ -59,7 +59,7 @@ def generar_reporte():
     # Gráfico
     conteo = df["Taller"].value_counts()
     conteo.plot(kind="bar", title="Inscritos por Taller", ylabel="Cantidad")
-    
+    plt.tight_layout()
 
 #---------------------Interfaz---------------------
 
