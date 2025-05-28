@@ -70,7 +70,7 @@ entry_clases = tk.Entry(ventana)                                             # M
 entry_clases.grid(row=3, column=1)
 
 # Botón para registrar persona
-boton_registrar = tk.Button(ventana, text="Registrar persona", command=none)
+boton_registrar = tk.Button(ventana, text="Registrar persona", command=registrar)
 boton_registrar.grid(row=4, column=0, pady=10)
 
 # Botón para generar reporte
