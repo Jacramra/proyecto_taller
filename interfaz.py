@@ -27,7 +27,12 @@ def registrar():
     
     messagebox.showinfo(f"{nombre} registrado satisfactoriamente.")
 
-   
+    #Limpio el contenido que el usuario ingresó en los campos de texto
+    entry_nombre.delete(0, tk.END)
+    entry_edad.delete(0, tk.END)
+    entry_clases.delete(0, tk.END)
+    combo_taller.set("")
+
 
 #---------------------Interfaz---------------------
 
