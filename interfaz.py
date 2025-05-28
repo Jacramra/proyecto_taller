@@ -4,8 +4,8 @@ import pandas as pd
 import matplotlib as plt
 import os
 
-
-
+ruta_csv = os.path.join("datos", "participantes.csv")
+data = pd.read_csv(ruta_csv)
 
 
 # Función para registrar persona
@@ -18,6 +18,13 @@ def registrar():
     if not (nombre and edad and taller and clases):
         messagebox.showerror("Campos incompletos.")
         return
+
+    #Guardar datos en un archivo CSV
+    if os.path.exists(ruta_csv):
+        df_nuevo.to_csv(ruta_csv, mode="a", header=False, index=False)
+    else:
+        df_nuevo.to_csv(ruta_csv, index=False)
+
 
 #---------------------Interfaz---------------------
 
