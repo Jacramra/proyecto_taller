@@ -24,7 +24,10 @@ def registrar():
         df_nuevo.to_csv(ruta_csv, mode="a", header=False, index=False)
     else:
         df_nuevo.to_csv(ruta_csv, index=False)
+    
+    messagebox.showinfo(f"{nombre} registrado satisfactoriamente.")
 
+   
 
 #---------------------Interfaz---------------------
 
