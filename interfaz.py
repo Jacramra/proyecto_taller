@@ -44,7 +44,8 @@ def generar_reporte():
         messagebox.showerror("No hay datos aún.")
         return
 
-
+    df = pd.read_csv(ruta_csv)
+    
 #---------------------Interfaz---------------------
 
 # Crear ventana principal
