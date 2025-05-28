@@ -2,6 +2,9 @@ import tkinter as tk
 from tkinter import messagebox, ttk
 import pandas as pd
 import matplotlib as plt
+import os
+
+
 
 # Crear ventana principal
 ventana = tk.Tk()
