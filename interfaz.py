@@ -72,7 +72,7 @@ ventana.title("Talleres Artísticos")
 label_nombre = tk.Label(ventana, text="Nombre:")                             # Mostrar etiqueta nombre
 label_nombre.grid(row=0, column=0)          
 entry_nombre = tk.Entry(ventana)                                            # Mostrar campo de texto
-entry_nombre.grid(row=1, column=1)
+entry_nombre.grid(row=0, column=1)
 
 # Campo: Nombre
 label_edad = tk.Label(ventana, text="Edad:")
