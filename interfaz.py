@@ -49,6 +49,13 @@ def generar_reporte():
     promedio_edad = df["Edad"].mean()
     popular = df["Taller"].mode()[0]
 
+    resumen = f"""
+    Personas registradas: {total}
+    Edad promedio: {promedio_edad:.1f}
+    Taller más popular: {popular}
+    """
+    messagebox.showinfo("Reporte", resumen)
+
 #---------------------Interfaz---------------------
 
 # Crear ventana principal
