@@ -3,6 +3,7 @@ from tkinter import messagebox, ttk
 import pandas as pd
 import matplotlib as plt
 import os
+from participante import Participante
 
 ruta_csv = os.path.join("datos", "participantes.csv")
 data = pd.read_csv(ruta_csv)
