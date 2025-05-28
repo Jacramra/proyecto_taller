@@ -47,6 +47,7 @@ def generar_reporte():
     df = pd.read_csv(ruta_csv)
     total = len(df)
     promedio_edad = df["Edad"].mean()
+    popular = df["Taller"].mode()[0]
 
 #---------------------Interfaz---------------------
 
