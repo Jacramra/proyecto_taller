@@ -45,7 +45,9 @@ def generar_reporte():
         return
 
     df = pd.read_csv(ruta_csv)
+    total = len(df)
     
+
 #---------------------Interfaz---------------------
 
 # Crear ventana principal
