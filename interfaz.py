@@ -56,6 +56,10 @@ def generar_reporte():
     """
     messagebox.showinfo("Reporte", resumen)
 
+    # Gráfico
+    conteo = df["Taller"].value_counts()
+    
+
 #---------------------Interfaz---------------------
 
 # Crear ventana principal
