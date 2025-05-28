@@ -14,6 +14,10 @@ def registrar():
     taller = combo_taller.get()
     clases = entry_clases.get()
 
+    if not (nombre and edad and taller and clases):
+        messagebox.showerror("Campos incompletos.")
+        return
+
 # Campo: Nombre
 label_nombre = tk.Label(ventana, text="Nombre:")                             # Mostrar etiqueta nombre
 label_nombre.grid(row=0, column=0)          
