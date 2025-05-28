@@ -19,6 +19,10 @@ def registrar():
         messagebox.showerror("Campos incompletos.")
         return
 
+    #Instancia de la clase Participante
+    p = Participante(nombre, edad, taller, clases)
+    df_nuevo = pd.DataFrame([p.diccionario()])     #Llama al método diccionario del objeto Participante para obtener un diccionario
+
     #Guardar datos en un archivo CSV
     if os.path.exists(ruta_csv):
         df_nuevo.to_csv(ruta_csv, mode="a", header=False, index=False)
