@@ -6,9 +6,7 @@ import os
 
 
 
-# Crear ventana principal
-ventana = tk.Tk()
-ventana.title("Talleres Artísticos")
+
 
 # Función para registrar persona
 def registrar():
@@ -20,6 +18,12 @@ def registrar():
     if not (nombre and edad and taller and clases):
         messagebox.showerror("Campos incompletos.")
         return
+
+#---------------------Interfaz---------------------
+
+# Crear ventana principal
+ventana = tk.Tk()
+ventana.title("Talleres Artísticos")
 
 # Campo: Nombre
 label_nombre = tk.Label(ventana, text="Nombre:")                             # Mostrar etiqueta nombre
