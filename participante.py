@@ -15,3 +15,12 @@ class Participante:
         self.edad = int(edad)
         self.taller = taller
         self.clases = int(clases)
+
+    def diccionario(self):
+        return {
+            "Nombre": self.nombre,
+            "Edad": self.edad,
+            "Taller": self.taller,
+            "Clases": self.clases,
+            "Total a Pagar": self.calcular_pago()
+        }
