@@ -25,5 +25,5 @@ class Participante:
             "Edad": self.edad,
             "Taller": self.taller,
             "Clases": self.clases,
-            "Total a Pagar": self.calcular_pago()
+            "Total a Pagar": self.calcular_total_a_pagar()
         }
