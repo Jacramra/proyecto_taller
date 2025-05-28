@@ -16,6 +16,9 @@ class Participante:
         self.taller = taller
         self.clases = int(clases)
 
+    def calcular_total_a_pagar(self):
+        return self.clases * Participante.precios.get(self.taller, 0)
+
     def diccionario(self):
         return {
             "Nombre": self.nombre,
